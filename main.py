@@ -77,8 +77,8 @@ class Calc:
 
             fo = open("output.txt", "a")
             fo.write(
-                x + " = \n    max = {0:.3f}\n      min = {0:.3f}\n".format(maxi,
-                                                                           mini))
+                x + " = \n    max = {0:.3f}\n      min = {0:.3f}\n"
+                .format(maxi, mini))
 
     def one_by_one(self):
         input_str = input(
@@ -95,6 +95,7 @@ class Calc:
         maxi = (((one * 10) + two) * three) * four_max
         mini = (((one * 10) + two) * three) * four_min
         print("max = {}, min = {}".format(maxi, mini))
+        self.one_by_one()
 
 
 if __name__ == "__main__":
